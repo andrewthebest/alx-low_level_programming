@@ -6,17 +6,18 @@
  */
 int main(void)
 {
-	int i;
+	int i = 48;
+	int j = 'a';
 
 	while (i >= 48 && i < 58)
 	{
 		putchar(i);
 		i++;
 	}
-	while (i >= 'a' && i <= 'f')
+	while (j >= 'a' && j <= 'f')
 	{
-		putchar(i);
-		i++;
+		putchar(j);
+		j++;
 	}
 	putchar('\n');
 	return (0);
