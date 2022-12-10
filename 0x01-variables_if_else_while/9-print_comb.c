@@ -12,6 +12,10 @@ int main(void)
 	while (number >= 48 && number <= 57)
 	{
 		putchar(number);
+
+		if (number == 57)
+			break;
+
 		putchar(',');
 		putchar(' ');
 		number++;
