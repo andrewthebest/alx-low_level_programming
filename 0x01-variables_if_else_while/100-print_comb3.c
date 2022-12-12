@@ -7,23 +7,23 @@
 int main(void)
 
 {
-	int num1 = 48;
-	int num2 = 48;
+	int num1 = '0';
+	int num2 = '0';
 
 	while (num1 <= 57)
 	{
 		while (num2 <= 57)
 		{
-			if (num1+num2 == num2+num1)
-			{
-				continue;
-			}
-			else
+			if (num1 < num2)
 			{
 				putchar(num1);
 				putchar(num2);
-				putchar(',');
-				putchar(' ');
+				
+				if (num1 != '8' || (num1 == '8' && num2 != '9'))
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 			num2++;
 		}		
