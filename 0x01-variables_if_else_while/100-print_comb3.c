@@ -28,10 +28,9 @@ int main(void)
 			num2++;
 		}
 		num1++;
+		num2 = num1;
 	}
-
 	putchar('\n');
-
 	return (0);
 
 }
