@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_sign: check if a number is positive, negative or null
+ * print_sign - check if a number is positive, negative or null
  * @num: integer to test
  *
  * Return: 1 if 'num' is positive, 0 if negative and -1 if null
@@ -31,5 +31,5 @@ int print_sign(int num)
 	}
 	_putchar('\n');
 
-	return result;
+	return (result);
 }

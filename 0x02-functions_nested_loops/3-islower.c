@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _islower:test if 'car' is lowercase character
+ * _islower - test if 'car' is lowercase character
  * @car: character to test
  *
  * Return: 1 if 'car' is lowercase, 0 instead
@@ -17,5 +17,5 @@ int _islower(int car)
 	else
 		result = 0;
 
-	return result;
+	return (result);
 }
