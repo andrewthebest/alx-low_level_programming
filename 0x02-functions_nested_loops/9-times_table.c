@@ -21,7 +21,7 @@ void times_table(void)
 			printf("%d, ", mult);
 			j++;
 		}
-		_putchar('\n');
+		printf("\n");
 		i++;
 		j = 0;
 	}
