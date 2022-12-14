@@ -13,9 +13,9 @@ void times_table(void)
 	int j = 0;
 	int mult;
 
-	while (i <= 0 && i >= 9)
+	while (i >= 0 && i <= 9)
 	{
-		while (j <= 0 && j >= 9)
+		while (j >= 0 && j <= 9)
 		{
 			mult = i * j;
 			printf("%d, ", mult);
