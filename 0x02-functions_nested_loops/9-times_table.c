@@ -15,12 +15,13 @@ void times_table(void)
 
 	while (i >= 0 && i <= 9)
 	{
-		while (j >= 0 && j <= 9)
+		while (j >= 0 && j < 9)
 		{
 			mult = i * j;
 			printf("%d, ", mult);
 			j++;
 		}
+		printf("%d", mult);
 		printf("\n");
 		i++;
 		j = 0;
