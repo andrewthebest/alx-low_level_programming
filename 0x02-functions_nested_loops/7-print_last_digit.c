@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  * print_last_digit - print the last digit of 'num'
@@ -21,7 +20,7 @@ int print_last_digit(int num)
 
 		result = num % 10;
 	}
-	printf("%d", result);
+	_putchar(result);
 
 	return (result);
 }
