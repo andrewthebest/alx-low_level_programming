@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _alpha - test if 'car' is an alphabetic character (lowercase or uppercase)
+ * _isalpha - test if 'car' is an alphabetic character (lowercase or uppercase)
  * @car: character to test
  *
  * Return: 1 if 'car' is a letter, 0 instead

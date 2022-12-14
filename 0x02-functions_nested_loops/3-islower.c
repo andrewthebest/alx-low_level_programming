@@ -9,7 +9,7 @@
 
 int _islower(int car)
 {
-	
+
 	int result;
 
 	if (car >= 'a' && car <= 'z')
