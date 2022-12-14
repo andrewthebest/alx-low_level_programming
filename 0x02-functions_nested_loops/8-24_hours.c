@@ -38,4 +38,5 @@ void jack_bauer(void)
 		hour1++;
 		hour2 = '0';
 	}
+	_putchar('\n');
 }
