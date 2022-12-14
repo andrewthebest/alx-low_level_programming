@@ -8,9 +8,9 @@
 void print_alphabet_x10(void)
 {
 	char car = 'a';
-	int count = 10;
+	int count = 1;
 
-	while (count >= 1)
+	while (count <= 10)
 	{
 		while (car >= 'a' && car <= 'z')
 		{
@@ -18,6 +18,7 @@ void print_alphabet_x10(void)
 			car++;
 		}
 		_putchar('\n');
-		count--;
+		car = 'a'
+		count++;
 	}
 }
