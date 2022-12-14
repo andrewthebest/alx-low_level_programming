@@ -21,7 +21,12 @@ void times_table(void)
 			printf("%d", mult);
 
 			if (j != 9)
-				printf(", ");
+				printf(",");
+
+			if (mult < 10)
+				printf("  ");
+			else
+				printf(" ");
 			j++;
 		}
 		printf("\n");
