@@ -7,11 +7,17 @@
  */
 void print_alphabet_x10(void)
 {
-	int count = 1;
+        char car = 'a';
+        int count = 1;
 
-	while (count <= 10)
-	{
-		print_alphabet();
-		count++;
-	}
-}   
+        while (count <= 10)
+        {
+                while (car >= 'a' && car <= 'z')
+                {
+                        _putchar(car);
+                        car++;
+                }
+                _putchar('\n');
+                count++;
+        }
+}
