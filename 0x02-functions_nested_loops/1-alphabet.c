@@ -7,7 +7,7 @@
  */
 void print_alphabet(void)
 {
-	car = 'a';
+	char car = 'a';
 	while (car >= 'a' && car <= 'z')
 	{
 		_putchar(car);
