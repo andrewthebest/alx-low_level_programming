@@ -23,5 +23,6 @@ void times_table(void)
 		}
 		_putchar('\n');
 		i++;
+		j = 0;
 	}
 }
