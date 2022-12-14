@@ -21,10 +21,11 @@ void jack_bauer(void)
 			{
 				while (min2 >= '0' && min2 <= '9')
 				{
-					_putchar(min2);
-					_putchar(min1);
-					_putchar(hour2);
 					_putchar(hour1);
+					_putchar(hour2);
+					_putchar(':');
+					_putchar(min1);
+					_putchar(min2);
 					_putchar('\n');
 					min2++;
 				}
