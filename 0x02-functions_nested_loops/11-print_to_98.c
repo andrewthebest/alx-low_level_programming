@@ -11,10 +11,21 @@ void print_to_98(int num)
 {
 	int count = num;
 
-	while (count >= num && count < 98)
+	if (num <= 98)
 	{
-		printf("%d, ",count);
-		count++;
+		while (count >= num && count < 98)
+		{
+			printf("%d, ",count);
+			count++;
+		}
+	}
+	else
+	{
+		while (count > 98 && count <= num)
+		{
+			printf("%d, ", count);
+			count--;
+		}
 	}
 	printf("%d\n", count);
 }
