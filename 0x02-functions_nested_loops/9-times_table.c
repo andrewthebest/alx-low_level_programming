@@ -21,15 +21,20 @@ void times_table(void)
 			printf("%d", mult);
 
 			if (j != 9)
-				printf(",");
+				_putchar(',');
 
-			if (mult < 9)
-				printf("  ");
+			if (mult < 10)
+			{
+				_putchar(' ');
+				_putchar(' ');
+			}
 			else
-				printf(" ");
+				_putchar(' ');
+
 			j++;
 		}
-		printf("\n");
+
+		_putchar('\n');;
 		i++;
 		j = 0;
 	}
