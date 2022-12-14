@@ -29,7 +29,6 @@ int print_sign(int num)
 			result = -1;
 		}
 	}
-	_putchar('\n');
 
 	return (result);
 }
