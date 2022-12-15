@@ -23,7 +23,6 @@ void times_table(void)
 				if (j == 0)
 				{
 					_putchar('0');
-					_putchar(',');
 				}
 
 				if (j != 0)
@@ -51,7 +50,7 @@ void times_table(void)
 			}
 			j++;
 		}
-		_putchar('\n');;
+		_putchar('\n');
 		i++;
 		j = 0;
 	}
