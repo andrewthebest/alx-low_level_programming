@@ -43,7 +43,7 @@ void times_table(void)
 				_putchar('0' + (mult / 10));
 				_putchar('0' + (mult % 10));
 
-				if (b < 9)
+				if (j < 9)
 				{
 					_putchar(',');
 					_putchar(' ');
