@@ -10,7 +10,7 @@ void more_numbers(void)
 {
 	int count = 0;
 	int i = 1;
-	
+
 	while (i <= 10)
 	{
 		while (count <= 14)

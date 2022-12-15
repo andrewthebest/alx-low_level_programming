@@ -2,7 +2,6 @@
 
 /**
  * print_numbers - print all the numbers from 0 to 9
- * 
  * Return: nothing
  */
 
@@ -15,5 +14,4 @@ void print_numbers(void)
 		_putchar('0' + num);
 		num++;
 	}
-	_putchar('\n');
-}
+
