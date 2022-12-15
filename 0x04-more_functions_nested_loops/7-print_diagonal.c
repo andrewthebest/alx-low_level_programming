@@ -24,6 +24,8 @@ void print_diagonal(int n)
 					_putchar('\\');
 				else if (i < j)
 					_putchar(' ');
+				else
+					break;
 
 				j++;
 			}
@@ -32,5 +34,4 @@ void print_diagonal(int n)
 			i++;
 		}
 	}
-	_putchar('\n');
 }
