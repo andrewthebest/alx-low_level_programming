@@ -11,9 +11,9 @@ void more_numbers(void)
 	int count = 0;
 	int i = 1;
 	
-	while (i > 0 && i <= 10)
+	while (i <= 10)
 	{
-		while (count >= 0 && count >= 14)
+		while (count <= 14)
 		{
 			if (count > 9 && count <= 14)
 				_putchar('0' + (count / 10));
