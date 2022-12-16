@@ -24,5 +24,5 @@ void print_number(int n)
 		print_number(tmp / 10);
 
 	car = tmp % 10;
-	putchar('0' + car);
+	_putchar('0' + car);
 }
