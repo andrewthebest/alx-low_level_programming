@@ -13,7 +13,7 @@ int main(void)
 	int i;
 
 	i = min;
-	while (i < max)
+	while (i <= max)
 	{
 		if ((i % 3) == 0 && (i % 5) != 0)
 			printf("Fizz");
