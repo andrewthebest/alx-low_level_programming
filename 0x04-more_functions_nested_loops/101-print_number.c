@@ -20,7 +20,7 @@ void print_number(int n)
 		_putchar('-');
 	}
 
-	if ((tmp / 10) > 0) 
+	if ((tmp / 10) > 0)
 		print_number(tmp / 10);
 
 	car = tmp % 10;
