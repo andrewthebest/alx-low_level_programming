@@ -24,6 +24,6 @@ int main(void)
 	}
 
 	printf("%lu\n", num);
-	
+
 	return (0);
 }
