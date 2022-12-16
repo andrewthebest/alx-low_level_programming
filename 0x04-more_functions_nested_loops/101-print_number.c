@@ -9,8 +9,8 @@
 
 void print_number(int n)
 {
-	unsigned int tmp;
-	unsigned int car;
+	int tmp;
+	int car;
 
 	tmp = n;
 
