@@ -21,8 +21,8 @@ void print_number(int n)
 	}
 
 	if ((tmp / 10) > 0) 
-		print_number(num / 10);
+		print_number(tmp / 10);
 
-	car = num % 10;
+	car = tmp % 10;
 	putchar('0' + car);
 }
