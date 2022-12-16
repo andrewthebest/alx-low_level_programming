@@ -20,6 +20,7 @@ int main(void)
 		{
 			num = num / i;
 		}
+		i++;
 	}
 
 	printf("%lu\n", num);
