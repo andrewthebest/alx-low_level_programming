@@ -18,8 +18,8 @@ void rev_string(char *s)
 		i++;
 	}
 	length = i - 1;
-	first_char = s;
-	last_char = s;
+	first_char = ch;
+	last_char = ch;
 	j = 0;
 	i = 0;
 
@@ -27,7 +27,7 @@ void rev_string(char *s)
 	{
 		last_char++;
 	}
-	
+
 	while (i <= (length / 2))
 	{
 		ch = *last_char;
