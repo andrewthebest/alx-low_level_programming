@@ -32,7 +32,7 @@ void rev_string(char *s)
 	{
 		ch = *last_char;
 		*last_char = *first_char;
-		*first_char = c;
+		*first_char = ch;
 
 		first_char++;
 		last_char--;
