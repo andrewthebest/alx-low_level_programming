@@ -8,7 +8,7 @@
  * Return: Capitalized string
  */
 
-int test_separator(int sep)
+int test_separator(char sep)
 {
 	char list[] = {' ', '\t', '\n', ',', ';', '.',
 		'!', '?', '"', '(', ')', '{', '}'};
@@ -42,7 +42,7 @@ char *cap_string(char *s)
 
 		if ((i == 0) || (test_sep == 1))
 		{
-			if ((s[i] >= 97) && (s[i] <= 122))
+			if ((s[i] >= 'a') && (s[i] <= 'z'))
 				s[i] -= 32;
 		}
 		i++;
