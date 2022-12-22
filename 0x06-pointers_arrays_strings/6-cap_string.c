@@ -10,13 +10,13 @@
 
 int test_separator(int sep)
 {
-	int list_sep[] = {32, 33, 34, 40, 41, 46, 59, 44, 63, 123, 125, 27, 10, 9, 11};
+	int list[] = {32, 33, 34, 40, 41, 46, 59, 44, 63, 123, 125, 27, 10, 9, 11};
 	int i, res;
 
 	i = 0;
 	while (i < 14)
 	{
-		if (sep == list_sep[i])
+		if (sep == list[i])
 		{
 			res = 1;
 			break;
