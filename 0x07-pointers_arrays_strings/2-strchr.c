@@ -25,7 +25,7 @@ char *_strchr(char *s, char c)
 		}
 		i++;
 	}
-	
+
 	if (found)
 		return (loc);
 	else

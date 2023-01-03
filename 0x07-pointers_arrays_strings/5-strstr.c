@@ -10,7 +10,7 @@
 
 char *_strstr(char *haystack, char *needle)
 {
-	int i, j, k, equal;
+	int i, j, k, equal, save;
 	char *found;
 
 	i = 0;
@@ -22,6 +22,7 @@ char *_strstr(char *haystack, char *needle)
 		if (haystack[i] == needle[j])
 		{
 			k = i;
+			save = i;
 			while (needle[j] != '\0')
 			{
 				if (haystack[k] == needle[j])
@@ -33,7 +34,7 @@ char *_strstr(char *haystack, char *needle)
 			}
 
 			if (equal)
-				found = &haystack[i];
+				found = &haystack[save];
 		}
 		i++;
 	}
