@@ -42,5 +42,5 @@ char *_strstr(char *haystack, char *needle)
 	if (equal)
 		return (found);
 	else
-		return (0);
+		return ('\0');
 }
