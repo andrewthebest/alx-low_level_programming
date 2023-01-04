@@ -9,20 +9,16 @@
 
 void _print_rev_recursion(char *s)
 {
-	int size = 0;
-
-	while (s[size] != '\0')
+	if (s[0] == '\0')
 	{
-		size++;
+		if (*(s - 1))
+		{
+			_putchar(*(s - 1));
+			*(s - 1) = '\0';
+			_print_rev_recursion(s - 1);
+		}
+		else
+			return;
 	}
-
-	if ((size - 1) < 0)
-	{
-		_putchar('\n');
-		return;
-	}
-	_putchar(s[size - 1]);
-	s[size - 1] = '\0';
-	s = s - 1;
-	_print_rev_recursion(s);
+	_print_rev_recursion(s + 1);
 }
