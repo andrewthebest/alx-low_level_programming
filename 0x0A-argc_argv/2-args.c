@@ -8,12 +8,12 @@
  * Return: Always 0
  */
 
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	int n;
 
 	n = 0;
-        if (argc == 1)
+	if (argc == 1)
 		printf("%s\n", argv[n]);
 	else
 	{
@@ -23,5 +23,5 @@ int main (int argc, char *argv[])
 			n++;
 		}
 	}
-        return (0);
+	return (0);
 }

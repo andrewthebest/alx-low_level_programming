@@ -9,13 +9,13 @@
  * Return: Always 0
  */
 
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	char *ptr;
-        int res;
+	int res;
 
-        if (argc != 3)
-        {
+	if (argc != 3)
+	{
 		printf("Error\n");
 		return (1);
 	}
