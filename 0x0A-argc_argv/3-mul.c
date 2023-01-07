@@ -12,7 +12,7 @@
 int main (int argc, char *argv[])
 {
 	char *ptr;
-        long res;
+        int res;
 
         if (argc != 3)
         {
@@ -21,6 +21,6 @@ int main (int argc, char *argv[])
 	}
 
 	res = strtol(argv[1], &ptr, 10) * strtol(argv[2], &ptr, 10);
-	printf("%ld\n", res);
+	printf("%d\n", res);
 	return (0);
 }

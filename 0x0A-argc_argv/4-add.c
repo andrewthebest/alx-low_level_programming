@@ -9,11 +9,11 @@
  * Return: Always 0
  */
 
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	char *ptr;
 	int n;
-	long res;
+	int res;
 
 	if (argc == 1)
 	{
@@ -36,7 +36,7 @@ int main (int argc, char *argv[])
 			}
 			n++;
 		}
-		printf("%ld\n", res);
+		printf("%d\n", res);
 	}
 
 	return (0);
