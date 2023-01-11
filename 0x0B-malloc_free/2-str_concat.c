@@ -17,9 +17,8 @@ char *str_concat(char *s1, char *s2)
 	char *str;
 	int len1, len2, i;
 
-	if ((s1 == NULL) || (s2 == NULL))
+	if ((s1 == NULL) && (s2 == NULL))
 		return (NULL);
-
 	i = 0;
 	if (s1 != NULL)
 		len1 = get_len(s1);
@@ -31,9 +30,14 @@ char *str_concat(char *s1, char *s2)
 	if (str == NULL)
 		return (NULL);
 
-	copy_string(str, s1, i, len1);
-	i = len1;
-	copy_string(str, s2, i, len2);
+	if (s1 != NULL)
+	{
+		copy_string(str, s1, i, len1);
+		i = len1;
+	}
+
+	if (s2 != NULL)
+		copy_string(str, s2, i, len2);
 
 	return (str);
 }
