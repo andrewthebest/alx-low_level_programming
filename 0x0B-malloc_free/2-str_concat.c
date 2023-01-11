@@ -66,9 +66,7 @@ void copy_string(char *str1, char *str2, int start, int len)
 {
 	int i, j;
 
-	if (len == 0)
-		return;
-	if (len == 1)
+	if (len <= 1)
 	{
 		str1[0] = '\0';
 		return;
