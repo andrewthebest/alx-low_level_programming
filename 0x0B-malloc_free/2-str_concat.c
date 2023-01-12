@@ -18,9 +18,10 @@ char *str_concat(char *s1, char *s2)
 	int len1, len2, i;
 
 	i = 0;
-
-	len1 = get_len(s1);
-	len2 = get_len(s2) + 1;
+	if (s1 != NULL)
+		len1 = get_len(s1);
+	if (s2 != NULL)
+		len2 = get_len(s2) + 1;
 
 	str = malloc(sizeof(char) * (len1 + len2));
 	if (str == NULL)
@@ -43,8 +44,6 @@ int get_len(char *str)
 {
 	int i = 0;
 
-	if (str == NULL)
-		return (0);
 	while (str[i] != '\0')
 	{
 		i++;
@@ -66,11 +65,6 @@ void copy_string(char *str1, char *str2, int start, int len)
 {
 	int i, j;
 
-	if (len <= 1)
-	{
-		str1[0] = '\0';
-		return;
-	}
 	i = start;
 	j = 0;
 	while (j < len)
