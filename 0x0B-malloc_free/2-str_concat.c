@@ -18,6 +18,33 @@ char *str_concat(char *s1, char *s2)
 	int len1, len2, i;
 
 	i = 0;
+	if ((s1 == NULL) && (s2 != NULL))
+	{
+		len2 = get_len(s2);
+		str = malloc(sizeof(char) * len2);
+		if (str == NULL)
+			return (NULL);
+		copy_string(str, s2, i, len2);
+		return (str);
+	}
+
+	if ((s2 == NULL) && (s1 != NULL))
+	{
+		len1 = get_len(s1);
+		str = malloc(sizeof(char) * len1);
+		if (str == NULL)
+			return (NULL);
+		copy_string(str, s1, i, len1);
+		return (str);
+	}
+	if (s1 == NULL && s2 == NULL)
+	{
+		str = malloc(sizeof(char) * 1);
+		if (str == NULL)
+			return (NULL);
+		str[0] = '\0';
+		return (str);
+	}
 	if (s1 != NULL)
 		len1 = get_len(s1);
 	if (s2 != NULL)
