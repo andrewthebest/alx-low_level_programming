@@ -50,8 +50,8 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 != NULL)
 		len2 = get_len(s2) + 1;
 
-	if (len2 > n)
-		len2 = n;
+	if ((len2 - 1) > n)
+		len2 = n + 1;
 	str = malloc(sizeof(char) * (len1 + len2));
 	if (str == NULL)
 		return (NULL);
