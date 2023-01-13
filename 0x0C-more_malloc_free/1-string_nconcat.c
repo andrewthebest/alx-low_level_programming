@@ -102,5 +102,4 @@ void copy_string(char *str1, char *str2, int start, int len)
 		i++;
 		j++;
 	}
-	str1[i] = '\0';
 }
