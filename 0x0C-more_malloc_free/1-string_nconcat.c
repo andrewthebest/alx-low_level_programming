@@ -15,7 +15,7 @@ void copy_string(char *str1, char *str2, int start, int len);
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *str;
-	int len1, len2, i;
+	unsigned int len1, len2, i;
 
 	i = 0;
 	if ((s1 == NULL) && (s2 != NULL))
