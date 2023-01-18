@@ -12,7 +12,7 @@
 
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-	long unsigned int i = 0;
+	unsigned long i = 0;
 
 	if (!size || !array || (size < i))
 		return;
@@ -22,5 +22,4 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 		action(array[i]);
 		i++;
 	}
-	return;
 }
