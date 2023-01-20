@@ -19,7 +19,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		return;
 
 	i = 0;
-	va_start(params, separator);
+	va_start(params, n);
 	while (i < n)
 	{
 		if ((i == 0 && separator) || (separator == NULL))
