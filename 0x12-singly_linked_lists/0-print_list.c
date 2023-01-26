@@ -1,8 +1,4 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "lists.h"
-
-unsigned int _strlen(char *str);
 
 /**
  * print_list - print all the elements of a list
@@ -13,39 +9,19 @@ unsigned int _strlen(char *str);
 
 size_t print_list(const list_t *h)
 {
-	const list_t *current;
-	unsigned int i;
+	size_t count;
 
-	current = h;
-	i = 0;
-	while (current != NULL)
+	count = 0;
+	while (h != NULL)
 	{
-		if (current->str == NULL)
+		if (h->str == NULL)
 			printf("[0] (nil)\n");
 		else
 		{
-			printf("[%u] %s\n", _strlen(current->str), current->str);
+			printf("[%u] %s\n", h->len, h->str);
 		}
-		current = current->next;
-		i++;
+		h = h->next;
+		count++;
 	}
-	return (i);
-}
-
-
-/**
- * _strlen - Returns the length of a string
- * @s: String to count
- *
- * Return: String length
- */
-unsigned int _strlen(char *s)
-{
-	unsigned int i = 0;
-
-	while (s[i] != '\0')
-	{
-		i++;
-	}
-	return (i);
+	return (count);
 }
