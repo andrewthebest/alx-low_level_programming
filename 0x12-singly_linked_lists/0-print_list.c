@@ -2,11 +2,10 @@
 
 /**
  * print_list - print all the elements of a linked list
- * @h: head of linked list
+ * @h: head of the list
  *
- * Return: the number of nodes of a linked list
+ * Return: the number of nodes
  */
-
 size_t print_list(const list_t *h)
 {
 	size_t count = 0;
