@@ -4,6 +4,7 @@
 /**
  * add_node - adds a new node at the beginning of a linked list
  * @head: pointer of list_t
+ * @str: string of new element
  *
  * Return: the address of the new element or NULL
  */
