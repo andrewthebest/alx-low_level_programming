@@ -1,43 +1,33 @@
 #include "main.h"
 
 /**
- * jack_bauer - print all minutes within 24 hours
+ * jack_bauer - Print every minute of the Jack Bauer
  *
- * Return: nothing
+ * Return: Nothing
  */
-
 void jack_bauer(void)
 {
-	int hour1 = '0';
-	int hour2 = '0';
-	int min1 = '0';
-	int min2 = '0';
+	int a, b, c, d;
 
-	while (hour1 >= 48 && hour1 <= 50)
+	for (a = 0; a <= 2; a++)
 	{
-		while (hour2 >= 48 && hour2 <= 52)
+		for (b = 0; b <= 9; b++)
 		{
-			while (min1 >= 48 && min1 <= 53)
+			if ((a <= 1 && b <= 9) || (a <= 2 && b <= 3))
 			{
-				while (min2 >= 48 && min2 <= 57)
+				for (c = 0; c <= 5; c++)
 				{
-					_putchar(hour1);
-					_putchar(hour2);
-					_putchar(':');
-					_putchar(min1);
-					_putchar(min2);
-					_putchar(' ');
-					_putchar('\n');
-					min2++;
+					for (d = 0; d <= 9; d++)
+					{
+						_putchar(a + '0');
+						_putchar(b + '0');
+						_putchar(58);
+						_putchar(c + '0');
+						_putchar(d + '0');
+						_putchar('\n');
+					}
 				}
-				min1++;
-				min2 = 48;
 			}
-			hour2++;
-			min1 = 48;
 		}
-		hour1++;
-		hour2 = 48;
 	}
-	_putchar('\n');
 }
