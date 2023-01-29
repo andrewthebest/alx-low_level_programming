@@ -1,21 +1,31 @@
 #include "main.h"
 
-/**
- * is_prime_number - test if an int is prime number
- * @n: integer to test
- *
- * Return: 1 if number is prime or 0 otherwise
- */
+int is_prime_number_helper(int n, int divisor);
 
+/**
+ * is_prime_number - check if an integer is a prime number
+ * @n: integer to check
+ *
+ * Return: 1 if n is prime, 0 otherwise
+ */
 int is_prime_number(int n)
 {
-	if (is_prime_number(n - 1))
+	if (n < 2)
 		return (0);
+	return (is_prime_number_helper(n, 2));
+}
 
-	if (n % (n - 1) == 0)
-	{
-		is_prime_number(n - 1);
-	}
-
-	return (1);
+/**
+ * is_prime_number_helper - recursively check if n is divisible by divisor
+ * @n: integer to check
+ * @divisor: divisor to try
+ * Return: 1 if n is prime, 0 otherwise
+ */
+int is_prime_number_helper(int n, int divisor)
+{
+	if (n == divisor)
+		return (1);
+	if (n % divisor == 0)
+		return (0);
+	return (is_prime_number_helper(n, divisor + 1));
 }
