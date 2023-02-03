@@ -1,7 +1,7 @@
 #include "main.h"
 
 unsigned int str_len(const char *b);
-unsigned int power(int base, int expo);
+int power(int base, int expo);
 
 /**
  * binary_to_uint - Converts a binary number to an unsigned integer
@@ -13,7 +13,7 @@ unsigned int power(int base, int expo);
 unsigned int binary_to_uint(const char *b)
 {
 	unsigned int uint;
-	unsigned int index, str_index;
+	int index, str_index;
 
 	if (b == NULL)
 		return (0);
@@ -57,9 +57,9 @@ unsigned int str_len(const char *b)
  *
  * Return: result of calculation
  */
-unsigned int power(unsigned int base, unsigned int expo)
+int power(int base, int expo)
 {
-	unsigned int i, result;
+	int i, result;
 
 	result = 1;
 	for (i = 0; i < expo; i++)
