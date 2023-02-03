@@ -53,7 +53,7 @@ unsigned int str_len(const char *b)
 /**
  * power - raises a number to a given exponent
  * @base: base
- * @exponent: exponent
+ * @expo: exponent
  *
  * Return: result of calculation
  */
