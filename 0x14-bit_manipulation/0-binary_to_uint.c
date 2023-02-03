@@ -12,11 +12,13 @@ int power(int base, int expo);
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int uint = 0;
-	int index, str_index;
+	unsigned int uint;
+	unsigned int index, str_index;
 
 	if (b == NULL)
 		return (0);
+
+	uint = 0;
 	str_index = str_len(b) - 1;
 	for (index = str_index; index >= 0; index--)
 	{
@@ -37,8 +39,9 @@ unsigned int binary_to_uint(const char *b)
  */
 unsigned int str_len(const char *b)
 {
-	int i, len = 0;
+	int i, len;
 
+	len = 0;
 	for (i = 0; b[i]; i++)
 	{
 		len++;
@@ -54,10 +57,11 @@ unsigned int str_len(const char *b)
  *
  * Return: result of calculation
  */
-int power(int base, int expo)
+unsigned int power(unsigned int base, unsigned int expo)
 {
-	int i, result = 1;
+	unsigned int i, result;
 
+	result = 1;
 	for (i = 0; i < expo; i++)
 	{
 		result *= base;
