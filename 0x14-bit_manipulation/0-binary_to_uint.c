@@ -1,7 +1,7 @@
 #include "main.h"
 
 unsigned int str_len(const char *b);
-int power(int base, int expo);
+unsigned int power(int base, int expo);
 
 /**
  * binary_to_uint - Converts a binary number to an unsigned integer
